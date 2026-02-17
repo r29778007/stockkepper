@@ -1,0 +1,161 @@
+Create a complete Android-style mobile inventory management app for shopkeepers.
+This must behave like a real mobile app (not desktop website).
+It must be fully mobile responsive and optimized for phone screens only.
+Use only: HTML + CSS + JavaScript
+No heavy frameworks.
+Clean, fast, simple code.
+Theme: Primary color = Green
+Secondary = White
+Modern minimal UI like real Android app.
+App must be smooth, touch-friendly, and large buttons.
+All data must save in browser local storage and remain saved after refresh.
+FIRST SCREEN (VERY IMPORTANT)
+When app opens show 2 big options:
+1️⃣ New User
+2️⃣ Old User
+NEW USER FLOW
+If user clicks NEW USER → open signup page.
+Ask details:
+Owner Name
+Shop Name
+Shop Address
+Shop Category
+Email ID
+Password
+Button: Create Account
+After create: Save all data in localStorage.
+Login user automatically.
+Open main dashboard.
+OLD USER LOGIN FLOW
+If user clicks OLD USER:
+Show login screen:
+Enter Email
+Enter Password
+Login button
+If correct → login and open dashboard.
+Forgot password option:
+Button: “Enter Code”
+If clicked:
+Send 4-digit code to email (simulate locally)
+Ask user to enter code
+If correct → login
+(Use local simulated system since no real email backend)
+MAIN DASHBOARD DESIGN
+Top header: Big green rectangle. Show shop name in white bold text.
+Top right: 3-line menu icon (settings).
+Below: Scrollable inventory table like Excel.
+App must support up to 1000 products smoothly.
+PRODUCT TABLE COLUMNS
+Create table with columns:
+Product Name
+Previous Quantity
+Current Quantity
+Unit selector (pcs/kg/liter/box/meter)
+button
+– button
+Product settings (3 dots)
+Allow vertical scrolling like spreadsheet.
+ADD PRODUCT BUTTON
+Show big: “ADD PRODUCT +”
+When clicked: Popup opens.
+User can:
+Type product name
+OR click mic icon 🎤 to speak product name
+Voice converts to text automatically.
+After adding: Previous qty = 0
+Current qty = 0
+Unit default = pcs
+SEARCH BAR WITH MIC
+Top search bar:
+Search product by typing
+Mic icon also available
+Voice search supported
+QUANTITY SYSTEM LOGIC (IMPORTANT)
+User edits ONLY current quantity.
+Previous quantity auto-updates.
+Example: First time: Current = 5
+Previous = 5
+Later: Current changed to 3
+Previous becomes 5
+Current becomes 3
+Always show previous last value.
+UNIT SYSTEM
+Next to quantity show dropdown:
+Units:
+pcs
+kg
+liter
+meter
+box
+If user selects pcs: Previous qty also show pcs automatically.
+Previous quantity NOT editable manually.
++ AND – BUTTONS
+Each product row must have:
+→ increase current qty
+– → decrease current qty
+Manual typing allowed.
+Every change updates:
+Previous quantity
+Last changed date
+GLOBAL SETTINGS (3 LINE MENU)
+When clicking menu open settings page.
+Include:
+1. Low stock percentage highlight
+User sets % (0–100).
+If stock drops by that % → row becomes YELLOW.
+Example: Previous 20
+If reaches 16 at 20% setting → yellow.
+2. No change days highlight
+User sets days.
+If quantity not changed for set days → BLUE highlight.
+Example: 30 days no change → blue row.
+3. Language translate option
+Option:
+English (default)
+Hindi
+If Hindi selected → all UI text must translate to Hindi.
+If English selected → back to English.
+4. About founder section
+Option: “Know About Founder”
+When clicked show popup/page:
+Text: Founder of this app is Prince Agrawal Sir.
+Write 8–10 impressive lines about a hardworking young entrepreneur building smart solutions for shopkeepers and digital India.
+Make it motivational and professional.
+5. Logout option
+Logout clears session and returns to login screen.
+PRODUCT-SPECIFIC SETTINGS
+Each product row has 3-dot menu.
+When clicked open product settings:
+Options:
+Set expiry date
+Set expiry alert days
+If near expiry → highlight RED.
+Example: Expiry in 5 days → red highlight.
+COLOR PRIORITY
+If multiple conditions true:
+RED (expiry) highest
+Then YELLOW (low stock)
+Then BLUE (no change)
+Only one color visible.
+DATA STORAGE
+Store in local storage:
+Account info
+Product list
+Quantities
+Units
+Settings
+Dates
+Data must remain after refresh.
+UI REQUIREMENTS
+Must feel like real Android app:
+Large touch buttons
+Smooth scrolling
+Clean layout
+Green-white theme
+No desktop styling
+Fast loading
+IMPORTANT
+Generate full working app.
+Do NOT generate template.
+Do NOT skip any feature.
+Everything must work immediately after run.
